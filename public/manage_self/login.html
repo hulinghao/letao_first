@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,45 @@
     <!-- 导入自己的样式 -->
     <link rel="stylesheet" href="./css/common.css">
 </head>
-<body>
-    
+
+<body class='login_bg'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <!-- 面板 -->
+                <div class="panel mt_150 panel-primary">
+                    <div class="panel-heading  text-center">
+                        <h4>后台管理系统</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="userEmail" class="col-sm-3 control-label">用户名</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name='username' autocomplete="off" class="form-control" id="userEmail" placeholder="请输入用户名">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="userPass" class="col-sm-3 control-label">密码</label>
+                                <div class="col-sm-9">
+                                    <input type="password" name='password' class="form-control" id="userPass" placeholder="请输入密码">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-8">
+                                    <button type="reset" class="btn btn-default">重置</button>
+                                    <button type="submit" class="btn btn-primary pull-right">登陆</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
 <!-- 导入jQ -->
 <script src="./lib/jquery/jquery.min.js"></script>
