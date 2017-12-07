@@ -64,7 +64,7 @@ $(function () {
             success: function (backData) {
                 // console.log(backData);
                 if (backData.success == true) {
-                    console.log('登陆成功');
+                    // console.log('登陆成功');
                 } else {
                     if (backData.error == 1000) {
                         console.log('用户名错误');
