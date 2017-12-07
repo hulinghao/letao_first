@@ -26,8 +26,8 @@ $(function () {
                         message: "用户名的长度必须在3-15之间哦"
 
                     },
-                    emailAddress:{
-                        message:'不是邮箱地址'
+                    callback:{
+                        message:'用户名错误'
                     }
                 }
             },
@@ -48,7 +48,7 @@ $(function () {
 
                     },
                     callback: {
-                        message: "密码不正确"
+                        message: "密码错误"
                     }
                 }
             }
@@ -68,10 +68,10 @@ $(function () {
                 } else {
                     if (backData.error == 1000) {
                         console.log('用户名错误');
-                        $("form").data('bootstrapValidator').updateStatus('username', 'INVALID','between' );
+                        $("form").data('bootstrapValidator').updateStatus('username', 'INVALID','callback' );
                     } else if (backData.error == 1001) {
                         console.log('密码错误');
-                        $("form").data('bootstrapValidator').updateStatus('password', 'INVALID','between' );
+                        $("form").data('bootstrapValidator').updateStatus('password', 'INVALID','callback' );
 
                     }
                 }
