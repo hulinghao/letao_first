@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>乐淘--首页</title>
+    <title>乐淘--二级分类</title>
     <!-- 导入bootstrap的样式 -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <!-- 引入插件的样式 -->
@@ -35,17 +35,17 @@
                         用户管理
                     </a>
                 </li>
-                <li>
+                <li class='current'>
                     <a href="javascript:void(0);">
                         <span class='glyphicon glyphicon-list'></span>
                         分类管理
                     </a>
-                    <ol style="display:none">
+                    <ol style="">
                         <li>
                             <a href="first.html">
                                 一级分类
                             </a>
-                            <a href="second.html">
+                            <a style='color:white' href="second.html">
                                 二级分类
                             </a>
                         </li>
@@ -70,10 +70,13 @@
             <!-- 路径导航 -->
             <ol class="breadcrumb">
                 <li>
-                    <a href="./index.html">管理系统</a>
+                    <a href="#">管理系统</a>
                 </li>
                 <li class="active">
-                    首页
+                    分类管理
+                </li>
+                <li class="active">
+                    二级分类
                 </li>
             </ol>
             <div id="main" class='pull-left' style="width: 600px;height:400px;"></div>
