@@ -65,6 +65,7 @@ $(function () {
                 // console.log(backData);
                 if (backData.success == true) {
                     // console.log('登陆成功');
+                    window.location = './index.html';
                 } else {
                     if (backData.error == 1000) {
                         console.log('用户名错误');
